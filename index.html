@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>polynomial designer</title>
+    <meta property="og:url" content="https://frnsys.com/misc/polynomial_designer">
+    <meta property="og:site_name" content="polynomial designer">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="polynomial designer">
+    <meta property="og:description" content="draw points and get polynomial equations">
+    <meta property="og:image" content="https://frnsys.com/misc/polynomial_designer/shot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="polynomial designer">
+    <meta name="twitter:description" content="draw points and get polynomial equations">
+    <meta name="twitter:image" content="https://frnsys.com/misc/polynomial_designer/shot.png">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <main id="root"></main>
+    <canvas id="chart"></canvas>
+    <div class="output">
+      <h1 id="equation"></h1>
+      <h1 id="code"></h1>
+    </div>
+    <ul class="controls">
+      <li>
+        <label>degree</label>
+        <input id="degree" type="number" step="1" min="1" value="4" />
+      </li>
+      <li>
+        <label>x-scale</label>
+        <input id="x_scale" type="number" step="1" min="1" value="1" />
+      </li>
+      <li>
+        <label>y-scale</label>
+        <input id="y_scale" type="number" step="1" min="1" value="1" />
+      </li>
+      <li><button id="reset">reset</button></li>
+    </ul>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+
